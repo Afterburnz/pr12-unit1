@@ -1,18 +1,34 @@
 //Calvin Yang
 //Sept 5, 2025
-
+float sunY = -50;
+float moonY = 950;
+float r = 50;
+float g = 127;
+float b = 250;
 void setup() {
   size(800, 800);
-  background(50, 127, 250);
+
 }
 
 void draw() {
+   background(r, g, b);
+  //sun
+  stroke(74, 110, 202);
+  strokeWeight(10);
+  fill(180, 12, 99);
+  circle(150, sunY, 200);
+   //moon
+  stroke(227, 98, 104);
+  strokeWeight(10);
+  fill(240, 173, 175);
+  circle(150, moonY, 200);
   //grass
   stroke(1, 138, 35);
   strokeWeight(5);
   fill(11, 212, 60);
   rect(0, 500, 800, 300);
 
+  
   //walls
   stroke(255, 229, 112);
   strokeWeight(5);
@@ -52,12 +68,6 @@ void draw() {
   line(450, 300, 550, 300);
   line(500, 250, 500, 350);
 
-  //sun
-  stroke(74, 110, 202);
-  strokeWeight(10);
-  fill(180, 12, 99);
-  circle(150, 0, 200);
-
   //bush
   stroke(3, 87, 24);
   strokeWeight(5);
@@ -65,4 +75,26 @@ void draw() {
   ellipse(200, 700, 150, 100);
 
   ellipse(700, 675, 150, 100);
+  
+
+  if (sunY >=900){
+    r=0;
+    g=0;
+    b=0;
+  } else {
+    r = 50;
+    g=127;
+    b=250;
+    
+  }
+  
+  sunY = sunY+3;
+  if (sunY >=1900){
+    sunY = -100;
+  }
+  moonY = moonY+3;
+  if (moonY >=1900){
+    moonY = -100;
+  }
+  
 }
