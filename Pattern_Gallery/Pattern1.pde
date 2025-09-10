@@ -1,6 +1,7 @@
 
 
 void Pattern1() {
+  background(white);
   int posX1;
   int posY1;
   posX1 =0;
@@ -28,7 +29,7 @@ void Pattern1() {
     translate(cX, cY);
     x = 0;
     y = 0;
-    d = 500;
+    d = 600;
 
     int i = 0;
 

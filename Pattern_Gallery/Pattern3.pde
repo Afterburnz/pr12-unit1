@@ -1,3 +1,5 @@
-void Pattern3(){
+void Pattern3() {
   background(white);
+  
+
 }
