@@ -1,7 +1,7 @@
 color white= #ffffff;
 color black= #000000;
 
-int mode =1;
+int mode =2;
 final int Pattern1 =0;
 final int Pattern2 = 1;
 final int Pattern3 = 2;
